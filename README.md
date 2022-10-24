@@ -1,1 +1,1 @@
-# trashcanproject
+# TrashCan projects
