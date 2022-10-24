@@ -1,9 +1,11 @@
 ---
-layout: "../layouts/BlogPost.astro"
-title: "About Me"
-description: "-"
-updatedDate: "Oct 23 2022"
-#heroImage: "/placeholder-about.jpg"
+layout: "../layouts/Articles.astro"
+title: "Services"
 ---
 
-Services
+## Hey Neighbor!
+
+I am planning to add few new services.
+Join the newsletter by sending an email to <a href="mailto: leog.web.app@gmail.com">leog.web.app@gmail.com</a>
+
+Thank you!

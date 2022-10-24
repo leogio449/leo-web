@@ -1,5 +1,5 @@
 ---
-layout: "../layouts/BlogPost.astro"
+layout: "../layouts/Articles.astro"
 title: "About Me"
 ---
 
