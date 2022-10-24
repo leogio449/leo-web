@@ -1,9 +1,19 @@
 ---
 layout: "../layouts/BlogPost.astro"
 title: "About Me"
-description: "-"
-updatedDate: "Oct 23 2022"
-#heroImage: "/placeholder-about.jpg"
 ---
 
-Nothing here for now.. check my [blog](/blog) for more content.
+<div style="display:flex; padding: 20px 0 30px;">
+  <div style="display:flex; margin-right: 10px">
+    <div
+      style="width: 60px; height: 60px; border-radius: 100%; overflow:hidden;"
+    >
+      <img src="/images/leog_avatar.jpg" />
+    </div>
+  </div>
+  <div>
+    Leo G is a kind kid living at 449. He lives with his mom, dad and little
+    brother.
+    <b>Living the american dream!</b>
+  </div>
+</div>
