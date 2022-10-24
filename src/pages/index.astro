@@ -72,7 +72,7 @@ const posts = (await Astro.glob("./articles/*.{md,mdx}")).sort(
 
                 {post.frontmatter.heroImage && (
                   <div>
-                    <img src={post.frontmatter.heroImage} />
+                    <img width='75px' src={post.frontmatter.heroImage} />
                   </div>
                 )}
               </li>
