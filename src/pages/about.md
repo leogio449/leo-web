@@ -8,7 +8,7 @@ title: "About Me"
     <div
       style="width: 60px; height: 60px; border-radius: 100%; overflow:hidden;"
     >
-      <img src="/images/leog_avatar.jpg" />
+      <img alt="Leo G" src="/images/leog_avatar.jpg" />
     </div>
   </div>
   <div>
