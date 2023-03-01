@@ -1,0 +1,166 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import HeaderHeadline from "../../components/HeaderHeadline.astro";
+import Footer from "../../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../config";
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      @font-face {
+        font-family: 'Rocher';
+        src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+      }
+
+      @font-palette-values --Grays {
+        font-family: Rocher;
+        base-palette: 9;
+      }
+
+      @font-palette-values --Purples {
+        font-family: Rocher;
+        base-palette: 6;
+      }
+
+      @font-palette-values --Mint {
+        font-family: Rocher;
+        base-palette: 7;
+      }
+
+      .grays {
+        font-palette: --Grays;
+      }
+
+      .purples {
+        font-palette: --Purples;
+      }
+
+      .mint {
+        font-palette: --Mint;
+      }
+
+      html {
+        background-position: -700px;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: 'Rocher';
+        text-align: center;
+        font-size: 30px;
+        line-height: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h2 {
+        text-align: left;
+        font-family: 'Rocher';
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: -10px;
+      }
+
+      p {
+        margin: 10px 0;
+      }
+
+      h3 {
+        margin: 0;
+        font-size: 1.5em;
+        line-height: 1.1em;
+        letter-spacing: -0.02em;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      ul {
+        margin: 20px;
+        border: 2px solid orange;
+        padding: 20px;
+        list-style-type: none;
+        padding: unset;
+        border-radius: 20px;
+      }
+      ul li {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+      }
+
+      ul li time {
+        font-style: italic;
+        color: rgb(198, 198, 198);
+      }
+      ul li p {
+        margin: 5px 0;
+      }
+
+      ul li a {
+        margin-left: 10px;
+      }
+
+      img {
+        position: absolute;
+        right: 0;
+        top: 440px;
+        width: 160px;
+        animation: bounce 1.5s cubic-bezier(0.5, 0.05, 1, 0.5);
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes bounce {
+        from { transform: translate3d(0, -200px, 0);}
+        to { transform: translate3d(0, -100px, 0);}
+      } 
+
+      .link-subdescription {
+        color: white;
+        font-weight: lighter;
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+
+    <main>
+      <section>
+        <h1>Please Join me on March 3rd to celebrate my birthday!</h1>
+
+        <h2 class="mint">When</h2>
+        <p>Sat, Mar 4th @ 11:30am</p>
+
+        <h2 class="mint">Where</h2>
+        <p>Hellyer County Park
+          <br>985 Hellyer Ave
+          <br>San Jose CA
+        </p>
+
+        <h2 class="mint">RSVP</h2>
+        <p>Please répondez s'il vous plaît.</p>
+        <p>Send a message to: 
+          <ul>
+            <li>Text: <a href="tel:646-450-6233">646-450-6233</a></li>
+            <li>Email: <a href="mailto:anh.giordano@gmail.com">anh.giordano@gmail.com</a></li>
+          </ul>
+        </p>
+
+        <img src="/images/pika.png">
+      </section>
+    </main>
+
+    <Footer />
+  </body>
+</html>

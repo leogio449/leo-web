@@ -7,6 +7,10 @@ import compress from "astro-compress";
 
 export default defineConfig({
   site: "https://leog.web.app",
+  server: {
+    port: 4060,
+    // host: true
+  },
   integrations: [mdx(), sitemap(), compress({
     css: true,
     html: true,
