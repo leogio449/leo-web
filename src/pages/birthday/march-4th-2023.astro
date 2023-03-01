@@ -127,7 +127,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../config";
 
       @keyframes bounce {
         from { transform: translate3d(0, -200px, 0);}
-        to { transform: translate3d(0, -100px, 0);}
+        to { transform: translate3d(0, -100px, 0) rotateX(40deg);}
       } 
 
       .link-subdescription {
@@ -161,10 +161,32 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../config";
           </ul>
         </p>
 
-        <img src="/images/pika.png">
+        <img id="pika" src="/images/pika.png">
       </section>
     </main>
 
     <Footer />
+
+    <script>
+    const pika = document.getElementById("pika");
+    const pikaRect = pika.getBoundingClientRect();
+    
+    const pikaW = pikaRect.width;
+    const pikaH = 160;
+
+    pika.addEventListener('touchmove', (event)=>{
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      /* console.log({
+        x: event.changedTouches[0].clientX,
+        Y: event.changedTouches[0].clientY,
+        rec: pika.getBoundingClientRect(),
+        pikaW,
+        pikaH
+      }); */
+      pika.style.top = `${event.changedTouches[0].clientY - pikaW/2}px`;
+      pika.style.left = `${event.changedTouches[0].clientX - pikaH/2}px`;
+    })
+    </script>
   </body>
 </html>
