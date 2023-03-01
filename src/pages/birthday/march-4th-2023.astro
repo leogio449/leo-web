@@ -1,7 +1,6 @@
 ---
 import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
-import HeaderHeadline from "../../components/HeaderHeadline.astro";
 import Footer from "../../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../config";
 
@@ -12,6 +11,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../config";
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <style>
+
+      header {
+        margin-bottom: 10px;
+      }
+
       @font-face {
         font-family: 'Rocher';
         src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
@@ -86,9 +90,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../config";
       }
 
       ul {
-        margin: 20px;
+        margin: 10px 20px;
         border: 2px solid orange;
-        padding: 20px;
+        padding: 10px !important;
         list-style-type: none;
         padding: unset;
         border-radius: 20px;
@@ -137,10 +141,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../../config";
 
     <main>
       <section>
-        <h1>Please Join me on March 3rd to celebrate my birthday!</h1>
+        <h1>Please Join Me On March 4th To Celebrate My Birthday!</h1>
 
         <h2 class="mint">When</h2>
-        <p>Sat, Mar 4th @ 11:30am</p>
+        <p>Sat, March 4th at 11:30am</p>
 
         <h2 class="mint">Where</h2>
         <p>Hellyer County Park

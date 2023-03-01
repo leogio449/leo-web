@@ -27,6 +27,14 @@ body {
   color: #fff;
 }
 
+header {
+  margin-bottom: 0 !important;
+}
+
+header h2 {
+  margin: 0 !important;
+}
+
 h1,
 h2,
 h3,
